@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="meanhotel">
+<head>
+  <title>Mean Hotel</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+</head>
+<body>
+
+  <mh-navigation></mh-navigation>
+
+  <div class="container padded">
+    <div ng-view></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted text-center">
+        <a href="http://localhost:3000/#!/"><img src="/images/Octocat.png" height="26" alt="Full Stack"/></a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="jquery/jquery-3.2.0.min.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
+  <script src="angular-app/app.js"></script>
+  <script src="angular-app/hotel-list/hotel-list-controller.js"></script>
+  <script src="angular-app/hotel-display/hotel-display-controller.js"></script>
+  <script src="angular-app/hotel-data-factory/hotel-data-factory.js"></script>
+  <script src="angular-app/hotel-rating/hotel-rating-directive.js"></script>
+  <script src="angular-app/register/register-controller.js"></script>
+  <script src="angular-app/navigation-directive/navigation-directive.js"></script>
+  <script src="angular-app/login/login-controller.js"></script>
+  <script src="angular-app/auth/auth-factory.js"></script>
+  <script src="angular-app/auth/auth-interceptor.js"></script>
+</body>
+</html>
